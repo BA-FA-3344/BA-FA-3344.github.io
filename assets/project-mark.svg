@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Three interlocking puzzle pieces">
+  <path fill="#287f8c" d="M18 6H50V27C37 21 37 43 50 37V63C63 57 63 79 50 73V94H18Q6 94 6 82V18Q6 6 18 6Z"/>
+  <path fill="#c89a59" d="M50 6H82Q94 6 94 18V50H77C83 37 61 37 67 50H50V37C37 43 37 21 50 27Z"/>
+  <path fill="#81749e" d="M50 50H67C61 37 83 37 77 50H94V82Q94 94 82 94H50V73C63 79 63 57 50 63Z"/>
+  <g fill="none" stroke="#f7f9f8" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M50 6V27C37 21 37 43 50 37V63C63 57 63 79 50 73V94"/>
+    <path d="M50 50H67C61 37 83 37 77 50H94"/>
+  </g>
+</svg>
