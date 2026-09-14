@@ -1,0 +1,174 @@
+WEBVTT
+
+1
+00:00:00.450 --> 00:00:03.781
+A robot's past experience can support many future
+questions.
+
+2
+00:00:03.781 --> 00:00:06.371
+This is the promise of spatial memory.
+
+3
+00:00:07.450 --> 00:00:08.845
+Where is an object?
+
+4
+00:00:08.845 --> 00:00:10.589
+Which one do we mean?
+
+5
+00:00:10.589 --> 00:00:11.985
+What happened, and when?
+
+6
+00:00:11.985 --> 00:00:15.124
+Each question needs different evidence from the same
+experience.
+
+7
+00:00:18.450 --> 00:00:22.241
+Perception, memory organization, and retrieval offer many
+design choices.
+
+8
+00:00:22.241 --> 00:00:27.295
+A human engineer must combine these pieces into one system
+that serves
+
+9
+00:00:27.295 --> 00:00:28.980
+different kinds of questions.
+
+10
+00:00:30.450 --> 00:00:34.117
+A coding agent explores these choices through feedback.
+
+11
+00:00:34.117 --> 00:00:38.701
+It combines modules, evaluates public tasks, and refines
+their connections.
+
+12
+00:00:38.701 --> 00:00:44.661
+The goal is one coherent system, shaped by the full range
+of questions.
+
+13
+00:00:46.450 --> 00:00:47.725
+Consider this bedroom.
+
+14
+00:00:47.725 --> 00:00:52.402
+The memory initially labels a ceiling fan as an aircraft
+model.
+
+15
+00:00:52.402 --> 00:00:54.953
+The designer adds crop based naming.
+
+16
+00:00:54.953 --> 00:01:00.904
+The retained geometry stays the same, while stored names
+and attributes become more useful.
+
+17
+00:01:04.450 --> 00:01:07.357
+We separate design, build, and query.
+
+18
+00:01:07.357 --> 00:01:09.780
+After development, implementations are frozen.
+
+19
+00:01:09.780 --> 00:01:14.625
+They build memories from held out histories without
+downstream questions.
+
+20
+00:01:14.625 --> 00:01:18.986
+The same fixed Query Agent then evaluates each system.
+
+21
+00:01:20.450 --> 00:01:26.435
+Our evaluation brings together public datasets, adapted
+annotations, and constructed questions: over
+
+22
+00:01:26.435 --> 00:01:32.919
+ten thousand queries across five complementary tracks, with
+separate public and frozen inputs.
+
+23
+00:01:34.450 --> 00:01:41.832
+Here are the best observed systems from Codex, Claude, and
+DeepSeek, alongside established baselines.
+
+24
+00:01:41.832 --> 00:01:48.160
+Five tracks reveal different strengths: category and
+referring expression localization, spatial questions,
+
+25
+00:01:48.160 --> 00:01:50.797
+temporal questions, and navigation questions.
+
+26
+00:01:52.450 --> 00:01:55.741
+We combine the five track scores with equal weight.
+
+27
+00:01:55.741 --> 00:01:59.764
+The best Codex Astra system reaches forty five point seven
+five.
+
+28
+00:01:59.764 --> 00:02:04.153
+Claude and DeepSeek also design competitive systems, ahead
+of the full track
+
+29
+00:02:04.153 --> 00:02:05.616
+baselines in overall score.
+
+30
+00:02:06.450 --> 00:02:10.954
+We select the agent designed system with the highest five
+track Unified
+
+31
+00:02:10.954 --> 00:02:13.205
+score: Codex with GPT six Astra.
+
+32
+00:02:13.205 --> 00:02:17.709
+We deploy it in Isaac Sim for navigation and question
+answering, testing
+
+33
+00:02:17.709 --> 00:02:21.462
+whether its memory can support a robot beyond the
+benchmark.
+
+34
+00:02:24.450 --> 00:02:28.365
+Now find the sofa closest to the refrigerator.
+
+35
+00:02:28.365 --> 00:02:35.216
+The agent retrieves candidates, uses their spatial
+evidence, and navigates to the selected sofa.
+
+36
+00:02:35.216 --> 00:02:40.599
+Navigation improves substantially, while whole house
+question answering remains a challenge.
+
+37
+00:02:42.450 --> 00:02:48.805
+Coding agents offer a practical way to design spatial
+memory around its downstream use.
+
+38
+00:02:48.805 --> 00:02:51.529
+Spatial memory, by agents, for agents.

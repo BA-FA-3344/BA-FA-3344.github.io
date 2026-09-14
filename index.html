@@ -3,38 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Spatial Memory by Agents, for Agents. Paper, video, and code coming soon.">
+  <meta name="description" content="Spatial Memory by Agents, for Agents. Watch the project overview and compare human-engineered and coding-agent-designed spatial memory systems.">
   <meta name="referrer" content="no-referrer">
   <title>Spatial Memory by Agents, for Agents</title>
   <link rel="icon" type="image/svg+xml" href="assets/project-mark.svg">
-  <style>
-    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18313e; background: #f8fafc; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 2rem 1.25rem; }
-    main { width: min(100%, 56rem); text-align: center; padding: clamp(2rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem); }
-    .project-mark { display: block; width: 5.5rem; height: 5.5rem; margin: 0 auto 2rem; }
-    .eyebrow { color: #536875; font-size: .875rem; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 1.25rem; }
-    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.25rem, 6vw, 4rem); line-height: 1.12; letter-spacing: -.035em; font-weight: 600; text-wrap: balance; }
-    h1 span { display: block; color: #176b87; }
-    .summary { margin: 1.75rem auto 0; max-width: 33rem; color: #536875; font-size: 1.0625rem; line-height: 1.75; text-wrap: balance; }
-    .resources { list-style: none; padding: 0; margin: 2.5rem 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
-    .resources li { min-width: 9rem; padding: .875rem 1.25rem; border: 1px solid #dbe3e9; border-radius: .625rem; background: #fff; }
-    .resources strong { display: block; font-size: 1rem; font-weight: 600; }
-    .resources small { display: block; margin-top: .3rem; color: #617480; font-size: .875rem; }
-    @media (max-width: 400px) { .resources { gap: .625rem; } .resources li { min-width: 0; flex: 1 1 100%; } }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <main>
-    <img class="project-mark" src="assets/project-mark.svg" width="100" height="100" alt="Three interlocking puzzle pieces">
-    <p class="eyebrow">Anonymous project page</p>
-    <h1>Spatial Memory <span>by Agents, for Agents</span></h1>
-    <p class="summary">Our project page is on its way.<br>Paper, video, and code will be available here.</p>
-    <ul class="resources" aria-label="Upcoming resources">
-      <li><strong>Paper</strong><small>Coming soon</small></li>
-      <li><strong>Video</strong><small>Coming soon</small></li>
-      <li><strong>Code</strong><small>Coming soon</small></li>
-    </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="brand" href="#main" aria-label="Spatial Memory home">
+      <img src="assets/project-mark.svg" width="38" height="38" alt="">
+      <span>Spatial Memory</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#leaderboard">Leaderboard <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="paper-title">
+      <p class="eyebrow">A study in spatial memory system design</p>
+      <h1 id="paper-title">Spatial Memory <span>by Agents, for Agents</span></h1>
+      <p class="summary">Can coding agents design better spatial memory systems?</p>
+      <div class="resources" aria-label="Project resources">
+        <a class="resource-link" href="#overview"><span aria-hidden="true">▶</span> Watch the overview</a>
+        <span class="resource-pending">Paper <small>soon</small></span>
+        <span class="resource-pending">Code <small>soon</small></span>
+      </div>
+    </section>
+
+    <section id="overview" class="overview" aria-labelledby="video-title">
+      <div class="section-meta">
+        <h2 id="video-title">The idea, in motion</h2>
+        <span>02:52 <span aria-hidden="true">/</span> English narration</span>
+      </div>
+      <div class="video-shell">
+        <video id="project-video" controls playsinline preload="metadata" poster="assets/overview-poster.jpg" aria-label="Spatial Memory by Agents, for Agents: project overview">
+          <source src="assets/overview.mp4" type="video/mp4">
+          <track kind="captions" src="assets/overview.en.vtt" srclang="en" label="English narration">
+          Your browser does not support embedded video. <a href="assets/overview.mp4">Download the overview.</a>
+        </video>
+        <button class="play-button" type="button" hidden aria-label="Play the project overview">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M8 4.5v15L20 12Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+      <div class="video-footer">
+        <span>Shared modules. Task feedback. A reusable memory system.</span>
+        <a href="assets/overview.mp4" download>Download video <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="leaderboard-section" aria-labelledby="leaderboard-title">
+      <div class="leaderboard-heading">
+        <div>
+          <p class="eyebrow">How do the systems compare?</p>
+          <h2 id="leaderboard-title">Five tracks. One leaderboard.</h2>
+          <p class="section-description">Different designers. The same five-track evaluation.</p>
+        </div>
+        <div class="score-key"><span class="key-dot" aria-hidden="true"></span> Unified <span aria-hidden="true">↑</span><small>out of 100</small></div>
+      </div>
+
+      <div class="leaderboard-card">
+        <div class="leaderboard-scroll" role="region" aria-label="Five-track leaderboard" tabindex="0">
+        <table aria-describedby="score-note">
+          <caption class="sr-only">Five-track and Unified scores on the frozen benchmark. Human-engineered baselines are followed by the best observed coding-agent-designed systems.</caption>
+          <colgroup><col class="method-col"><col class="track-col" span="5"><col class="score-col"></colgroup>
+          <thead>
+            <tr>
+              <th scope="col">System</th>
+              <th class="track-heading t1" scope="col"><span>T1</span><small>Category<br>localization</small></th>
+              <th class="track-heading t2" scope="col"><span>T2</span><small>Referring<br>expressions</small></th>
+              <th class="track-heading t3" scope="col"><span>T3</span><small>Spatial<br>QA</small></th>
+              <th class="track-heading t4" scope="col"><span>T4</span><small>Temporal<br>QA</small></th>
+              <th class="track-heading t5" scope="col"><span>T5</span><small>Navigation<br>QA</small></th>
+              <th class="unified-heading" scope="col">Unified <span aria-hidden="true">↑</span><small>Five-track mean</small></th>
+            </tr>
+          </thead>
+          <tbody class="baseline-group">
+            <tr class="group-heading"><th scope="rowgroup" colspan="7"><span class="group-label"><span class="group-marker human-marker" aria-hidden="true"></span>Human-engineered systems</span><span class="group-detail">Established baselines</span></th></tr>
+            <tr class="system-row"><th scope="row">ReMEmbR</th><td class="metric">1.01</td><td class="metric">0.47</td><td class="metric">61.64</td><td class="metric">24.49</td><td class="metric">58.98</td><td class="score">29.32</td></tr>
+            <tr class="system-row"><th scope="row">DAAAM</th><td class="metric">9.48</td><td class="metric">17.97</td><td class="metric">40.33</td><td class="metric">31.38</td><td class="metric">38.64</td><td class="score">27.56</td></tr>
+            <tr class="system-row"><th scope="row">LLM-with-Captions</th><td class="metric">0.87</td><td class="metric">0.56</td><td class="metric">59.70</td><td class="metric">19.49</td><td class="metric">51.27</td><td class="score">26.38</td></tr>
+            <tr class="system-row"><th scope="row">FARM-4B</th><td class="metric">16.43</td><td class="metric">25.77</td><td class="metric">46.18</td><td class="metric unavailable">—</td><td class="metric unavailable">—</td><td class="score unavailable">—</td></tr>
+            <tr class="system-row"><th scope="row">ConceptGraphs</th><td class="metric">2.07</td><td class="metric">6.49</td><td class="metric">31.98</td><td class="metric unavailable">—</td><td class="metric unavailable">—</td><td class="score unavailable">—</td></tr>
+          </tbody>
+          <tbody class="agent-group">
+            <tr class="group-heading"><th scope="rowgroup" colspan="7"><span class="group-label"><img src="assets/project-mark.svg" width="20" height="20" alt="">Coding-agent-designed systems</span><span class="group-detail best-tag">Best observed runs</span></th></tr>
+            <tr class="system-row leading"><th scope="row"><span class="harness">Codex</span><span class="method-slash"> / </span><span class="model">GPT-6 Astra</span></th><td class="metric">22.33</td><td class="metric">39.14</td><td class="metric">61.66</td><td class="metric">52.81</td><td class="metric">52.78</td><td class="score">45.75</td></tr>
+            <tr class="system-row"><th scope="row"><span class="harness">Claude</span><span class="method-slash"> / </span><span class="model">Opus 5</span></th><td class="metric">17.53</td><td class="metric">24.79</td><td class="metric">53.45</td><td class="metric">56.39</td><td class="metric">60.12</td><td class="score">42.46</td></tr>
+            <tr class="system-row"><th scope="row"><span class="harness">Claude</span><span class="method-slash"> / </span><span class="model">Opus 4.8</span></th><td class="metric">20.37</td><td class="metric">28.97</td><td class="metric">54.70</td><td class="metric">55.43</td><td class="metric">52.01</td><td class="score">42.30</td></tr>
+            <tr class="system-row"><th scope="row"><span class="harness">DeepSeek</span><span class="method-slash"> / </span><span class="model">V4-Pro</span></th><td class="metric">22.26</td><td class="metric">30.44</td><td class="metric">48.38</td><td class="metric">45.51</td><td class="metric">53.03</td><td class="score">39.92</td></tr>
+            <tr class="future-row"><th scope="row">Next coding agent<span class="future-subtitle">The next entry is open.</span></th><td class="future-space" colspan="5"><span class="future-track" aria-hidden="true"></span></td><td class="future-score" aria-label="Unknown future score">?</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <p class="scroll-hint">Scroll to explore all tracks <span aria-hidden="true">↔</span></p>
+      <p id="score-note" class="score-note">Scores are on a 0–100 scale; Unified equally weights five tracks. Agent rows show the best observed run per configuration.<br><span>— indicates an unsupported track; Unified requires all five.</span></p>
+    </section>
   </main>
+  <footer class="site-footer container"><span><img src="assets/project-mark.svg" width="22" height="22" alt="">Spatial Memory by Agents, for Agents</span><span>Anonymous research project</span></footer>
 </body>
 </html>
