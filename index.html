@@ -68,7 +68,7 @@
       <div class="leaderboard-card">
         <div class="leaderboard-scroll" role="region" aria-label="Five-track leaderboard" tabindex="0">
         <table aria-describedby="score-note">
-          <caption class="sr-only">Five-track and Unified scores on the frozen benchmark. Human-engineered baselines are followed by the best observed coding-agent-designed systems.</caption>
+          <caption class="sr-only">Five-track and Unified scores on the frozen benchmark. Human-engineered baselines are followed by coding-agent-designed systems picked using public test scores.</caption>
           <colgroup><col class="method-col"><col class="track-col" span="5"><col class="score-col"></colgroup>
           <thead>
             <tr>
@@ -90,7 +90,7 @@
             <tr class="system-row"><th scope="row">ConceptGraphs</th><td class="metric">2.07</td><td class="metric">6.49</td><td class="metric">31.98</td><td class="metric unavailable">—</td><td class="metric unavailable">—</td><td class="score unavailable">—</td></tr>
           </tbody>
           <tbody class="agent-group">
-            <tr class="group-heading"><th scope="rowgroup" colspan="7"><span class="group-label"><img src="assets/project-mark.svg" width="20" height="20" alt="">Coding-agent-designed systems</span><span class="group-detail best-tag">Best observed runs</span></th></tr>
+            <tr class="group-heading"><th scope="rowgroup" colspan="7"><span class="group-label"><img src="assets/project-mark.svg" width="20" height="20" alt="">Coding-agent-designed systems</span><span class="group-detail best-tag">Picked from public test</span></th></tr>
             <tr class="system-row leading"><th scope="row"><span class="harness">Codex</span><span class="method-slash"> / </span><span class="model">GPT-6 Astra</span></th><td class="metric">22.33</td><td class="metric">39.14</td><td class="metric">61.66</td><td class="metric">52.81</td><td class="metric">52.78</td><td class="score">45.75</td></tr>
             <tr class="system-row"><th scope="row"><span class="harness">Claude</span><span class="method-slash"> / </span><span class="model">Opus 5</span></th><td class="metric">17.53</td><td class="metric">24.79</td><td class="metric">53.45</td><td class="metric">56.39</td><td class="metric">60.12</td><td class="score">42.46</td></tr>
             <tr class="system-row"><th scope="row"><span class="harness">Claude</span><span class="method-slash"> / </span><span class="model">Opus 4.8</span></th><td class="metric">20.37</td><td class="metric">28.97</td><td class="metric">54.70</td><td class="metric">55.43</td><td class="metric">52.01</td><td class="score">42.30</td></tr>
@@ -101,7 +101,7 @@
         </div>
       </div>
       <p class="scroll-hint">Scroll to explore all tracks <span aria-hidden="true">↔</span></p>
-      <p id="score-note" class="score-note">Scores are on a 0–100 scale; Unified equally weights five tracks. Agent rows show the best observed run per configuration.<br><span>— indicates an unsupported track; Unified requires all five.</span></p>
+      <p id="score-note" class="score-note">Scores are on a 0–100 scale; Unified equally weights five tracks. Agent runs are picked using public test scores, one per configuration.<br><span>— indicates an unsupported track; Unified requires all five.</span></p>
     </section>
   </main>
   <footer class="site-footer container"><span><img src="assets/project-mark.svg" width="22" height="22" alt="">Spatial Memory by Agents, for Agents</span><span>Anonymous research project</span></footer>

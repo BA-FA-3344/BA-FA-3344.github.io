@@ -6,8 +6,8 @@ Static HTML/CSS with a small local script; no build step, third-party scripts,
 analytics, external fonts, or author information. The page hosts the 2:52
 overview video and a combined T1–T5 / Unified leaderboard. Paper and code links remain pending.
 
-The leaderboard shows five human-engineered baselines, then the best observed
-system from each of four Designer configurations. Values match the paper's
+The leaderboard shows five human-engineered baselines, then one system picked
+using public test scores from each of four Designer configurations. Values match the paper's
 frozen results. Unified equally weights all five tracks; FARM-4B and
 ConceptGraphs are listed with no Unified value because coverage is incomplete.
 The final question-mark row is an open slot, not a forecast or measured score.
